@@ -1,0 +1,373 @@
+/* reset browser styles */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/* end reset browser styles */
+.green-border {
+	border: 5px solid green;
+	border-radius: 10px;
+}
+
+@media screen and (min-width: 992px) {
+	html {
+		height: 100%;
+		body {
+			height: 100%;
+			#wrapper {
+				background: black;
+				max-height: 100%;
+				height: 100%;
+				.container {
+					height: 15%;
+					.page-header {
+						color: white;
+					}
+				} // first container
+			
+				.green-border {
+					padding-left: 0;
+					padding-right: 0;
+					height: 60%;
+					position: relative;
+					.jumbotron {
+						margin-bottom: 0;
+						height: 100%;
+						padding: 0;
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					} // jumbotron
+					#count-down {
+						position: absolute;
+						background: rgba(0, 0, 0, .8);
+						width: 100%;
+						height: 100%;
+						z-index: 0;
+						top: 50%;
+						left: 50%;
+						display: none;
+						color: green;
+						transform: translate(-50%, -50%);
+						font-size: 6em;
+						cursor: pointer;
+					}
+				} // green-border
+				
+				.choices {
+					color: white;
+					font-size: 2.5em;
+					padding-top: 3%;
+					padding-bottom: 3%;
+					height: 25%;
+					.row {
+						.answer-choice {
+							margin-top: 8px;
+							padding-left: 2%;
+							&:hover {
+								cursor: pointer;
+							}
+							.fa {
+								padding-left: 2%;
+							}
+							.fa-times {
+								color: red;
+							}
+							.fa-check {
+								color: blue;
+							}
+						}
+					}
+				} // choices
+			} // wrapper
+		} // body
+	} // html
+} // min-width: 992px
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+	html {
+		height: 100%;
+		body {
+			height: 100%;
+			#wrapper {
+				background: black;
+				max-height: 100%;
+				height: 100%;
+				.container {
+					height: 15%;
+					.page-header {
+						color: white;
+					}
+				} // first container
+			
+				.green-border {
+					padding-left: 0;
+					padding-right: 0;
+					height: 60%;
+					position: relative;
+					.jumbotron {
+						margin-bottom: 0;
+						height: 100%;
+						padding: 0;
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					} // jumbotron
+					#count-down {
+						position: absolute;
+						background: rgba(0, 0, 0, .8);
+						width: 100%;
+						height: 100%;
+						z-index: 0;
+						top: 50%;
+						left: 50%;
+						display: none;
+						color: green;
+						transform: translate(-50%, -50%);
+						font-size: 5em;
+						cursor: pointer;
+					}
+				} // green-border
+				
+				.choices {
+					color: white;
+					font-size: 2.5em;
+					padding-top: 3%;
+					padding-bottom: 3%;
+					height: 25%;
+					.row {
+						.answer-choice {
+							margin-top: 8px;
+							padding-left: 2%;
+							&:hover {
+								cursor: pointer;
+							}
+							.fa {
+								padding-left: 2%;
+							}
+							.fa-times {
+								color: red;
+							}
+							.fa-check {
+								color: blue;
+							}
+						}
+					}
+				} // choices
+			} // wrapper
+		} // body
+	} // html
+} // min-width: 768px
+
+@media screen and (max-width: 767px) and (min-width: 480px){
+	html {
+		height: 100%;
+		body {
+			height: 100%;
+			#wrapper {
+				background: black;
+				max-height: 100%;
+				height: 100%;
+				.container {
+					height: 15%;
+					.page-header {
+						color: white;
+						margin-top: 20px;
+						h1 {
+							font-size: 1.75em;
+						}
+					}
+				} // first container
+			
+				.green-border {
+					padding-left: 0;
+					padding-right: 0;
+					height: 60%;
+					position: relative;
+					.jumbotron {
+						margin-bottom: 0;
+						height: 100%;
+						padding: 0;
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					} // jumbotron
+					#count-down {
+						position: absolute;
+						background: rgba(0, 0, 0, .8);
+						width: 100%;
+						height: 100%;
+						z-index: 0;
+						top: 50%;
+						left: 50%;
+						display: none;
+						color: green;
+						transform: translate(-50%, -50%);
+						font-size: 3.5em;
+						cursor: pointer;
+					}
+				} // green-border
+				
+				.choices {
+					color: white;
+					font-size: 1em;
+					padding-top: 3%;
+					padding-bottom: 3%;
+					height: 25%;
+					.row {
+						.answer-choice {
+							margin-top: 8px;
+							padding-left: 2%;
+							//font-size: .75em;
+							&:hover {
+								cursor: pointer;
+							}
+							.fa {
+								padding-left: 2%;
+							}
+							.fa-times {
+								color: red;
+							}
+							.fa-check {
+								color: blue;
+							}
+						}
+					}
+				} // choices
+			} // wrapper
+		} // body
+	} // html
+} // min-width: 480px
+
+@media screen and (max-width: 479px){
+	html {
+		height: 100%;
+		body {
+			height: 100%;
+			#wrapper {
+				background: black;
+				max-height: 100%;
+				height: 100%;
+				.container {
+					height: 15%;
+					.page-header {
+						color: white;
+						margin-top: 0;
+						margin-bottom: 0;
+						h1 {
+							font-size: 1.1em;
+							margin-top: 10px;
+							margin-bottom: 0;
+							font-weight: bold;
+						}
+					}
+				} // first container
+			
+				.green-border {
+					padding-left: 0;
+					padding-right: 0;
+					height: 60%;
+					position: relative;
+					.jumbotron {
+						margin-bottom: 0;
+						height: 100%;
+						padding: 0;
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					} // jumbotron
+					#count-down {
+						position: absolute;
+						background: rgba(0, 0, 0, .8);
+						width: 100%;
+						height: 100%;
+						z-index: 0;
+						top: 50%;
+						left: 50%;
+						display: none;
+						color: green;
+						transform: translate(-50%, -50%);
+						font-size: 1.3em;
+						cursor: pointer;
+						p{
+							&:first-child{
+								padding-top: 10px;
+							}
+						}
+					}
+				} // green-border
+				
+				.choices {
+					color: white;
+					font-size: 1.1em;
+					padding-top: 3%;
+					padding-bottom: 3%;
+					height: 25%;
+					.row {
+						.answer-choice {
+							margin-top: 8px;
+							padding-left: 2%;
+							//font-size: .75em;
+							&:hover {
+								cursor: pointer;
+							}
+							.fa {
+								padding-left: 2%;
+							}
+							.fa-times {
+								color: red;
+							}
+							.fa-check {
+								color: blue;
+							}
+						}
+					}
+				} // choices
+			} // wrapper
+		} // body
+	} // html
+} // min-width: 480px

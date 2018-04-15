@@ -1,0 +1,429 @@
+/* reset browser styles */
+/* line 6, scss/style.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 13, scss/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 16, scss/style.scss */
+body {
+  line-height: 1.2;
+}
+
+/* line 19, scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 23, scss/style.scss */
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+/* line 27, scss/style.scss */
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+/* line 31, scss/style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, scss/style.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, scss/style.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* end reset browser styles */
+/* line 47, scss/style.scss */
+.green-border {
+  border: 5px solid green;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 53, scss/style.scss */
+  html {
+    height: 100%;
+  }
+  /* line 55, scss/style.scss */
+  html body {
+    height: 100%;
+  }
+  /* line 57, scss/style.scss */
+  html body #wrapper {
+    background: black;
+    max-height: 100%;
+    height: 100%;
+  }
+  /* line 61, scss/style.scss */
+  html body #wrapper .container {
+    height: 15%;
+  }
+  /* line 63, scss/style.scss */
+  html body #wrapper .container .page-header {
+    color: white;
+  }
+  /* line 68, scss/style.scss */
+  html body #wrapper .green-border {
+    padding-left: 0;
+    padding-right: 0;
+    height: 60%;
+    position: relative;
+  }
+  /* line 73, scss/style.scss */
+  html body #wrapper .green-border .jumbotron {
+    margin-bottom: 0;
+    height: 100%;
+    padding: 0;
+  }
+  /* line 77, scss/style.scss */
+  html body #wrapper .green-border .jumbotron img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 82, scss/style.scss */
+  html body #wrapper .green-border #count-down {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    display: none;
+    color: green;
+    transform: translate(-50%, -50%);
+    font-size: 6em;
+    cursor: pointer;
+  }
+  /* line 98, scss/style.scss */
+  html body #wrapper .choices {
+    color: white;
+    font-size: 2.5em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 25%;
+  }
+  /* line 105, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice {
+    margin-top: 8px;
+    padding-left: 2%;
+  }
+  /* line 108, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice:hover {
+    cursor: pointer;
+  }
+  /* line 111, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa {
+    padding-left: 2%;
+  }
+  /* line 114, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa-times {
+    color: red;
+  }
+  /* line 117, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa-check {
+    color: blue;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  /* line 129, scss/style.scss */
+  html {
+    height: 100%;
+  }
+  /* line 131, scss/style.scss */
+  html body {
+    height: 100%;
+  }
+  /* line 133, scss/style.scss */
+  html body #wrapper {
+    background: black;
+    max-height: 100%;
+    height: 100%;
+  }
+  /* line 137, scss/style.scss */
+  html body #wrapper .container {
+    height: 15%;
+  }
+  /* line 139, scss/style.scss */
+  html body #wrapper .container .page-header {
+    color: white;
+  }
+  /* line 144, scss/style.scss */
+  html body #wrapper .green-border {
+    padding-left: 0;
+    padding-right: 0;
+    height: 60%;
+    position: relative;
+  }
+  /* line 149, scss/style.scss */
+  html body #wrapper .green-border .jumbotron {
+    margin-bottom: 0;
+    height: 100%;
+    padding: 0;
+  }
+  /* line 153, scss/style.scss */
+  html body #wrapper .green-border .jumbotron img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 158, scss/style.scss */
+  html body #wrapper .green-border #count-down {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    display: none;
+    color: green;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    cursor: pointer;
+  }
+  /* line 174, scss/style.scss */
+  html body #wrapper .choices {
+    color: white;
+    font-size: 2.5em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 25%;
+  }
+  /* line 181, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice {
+    margin-top: 8px;
+    padding-left: 2%;
+  }
+  /* line 184, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice:hover {
+    cursor: pointer;
+  }
+  /* line 187, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa {
+    padding-left: 2%;
+  }
+  /* line 190, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa-times {
+    color: red;
+  }
+  /* line 193, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa-check {
+    color: blue;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  /* line 205, scss/style.scss */
+  html {
+    height: 100%;
+  }
+  /* line 207, scss/style.scss */
+  html body {
+    height: 100%;
+  }
+  /* line 209, scss/style.scss */
+  html body #wrapper {
+    background: black;
+    max-height: 100%;
+    height: 100%;
+  }
+  /* line 213, scss/style.scss */
+  html body #wrapper .container {
+    height: 15%;
+  }
+  /* line 215, scss/style.scss */
+  html body #wrapper .container .page-header {
+    color: white;
+    margin-top: 20px;
+  }
+  /* line 218, scss/style.scss */
+  html body #wrapper .container .page-header h1 {
+    font-size: 1.75em;
+  }
+  /* line 224, scss/style.scss */
+  html body #wrapper .green-border {
+    padding-left: 0;
+    padding-right: 0;
+    height: 60%;
+    position: relative;
+  }
+  /* line 229, scss/style.scss */
+  html body #wrapper .green-border .jumbotron {
+    margin-bottom: 0;
+    height: 100%;
+    padding: 0;
+  }
+  /* line 233, scss/style.scss */
+  html body #wrapper .green-border .jumbotron img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 238, scss/style.scss */
+  html body #wrapper .green-border #count-down {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    display: none;
+    color: green;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+    cursor: pointer;
+  }
+  /* line 254, scss/style.scss */
+  html body #wrapper .choices {
+    color: white;
+    font-size: 1em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 25%;
+  }
+  /* line 261, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice {
+    margin-top: 8px;
+    padding-left: 2%;
+  }
+  /* line 265, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice:hover {
+    cursor: pointer;
+  }
+  /* line 268, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa {
+    padding-left: 2%;
+  }
+  /* line 271, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa-times {
+    color: red;
+  }
+  /* line 274, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa-check {
+    color: blue;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* line 286, scss/style.scss */
+  html {
+    height: 100%;
+  }
+  /* line 288, scss/style.scss */
+  html body {
+    height: 100%;
+  }
+  /* line 290, scss/style.scss */
+  html body #wrapper {
+    background: black;
+    max-height: 100%;
+    height: 100%;
+  }
+  /* line 294, scss/style.scss */
+  html body #wrapper .container {
+    height: 15%;
+  }
+  /* line 296, scss/style.scss */
+  html body #wrapper .container .page-header {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /* line 300, scss/style.scss */
+  html body #wrapper .container .page-header h1 {
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  /* line 309, scss/style.scss */
+  html body #wrapper .green-border {
+    padding-left: 0;
+    padding-right: 0;
+    height: 60%;
+    position: relative;
+  }
+  /* line 314, scss/style.scss */
+  html body #wrapper .green-border .jumbotron {
+    margin-bottom: 0;
+    height: 100%;
+    padding: 0;
+  }
+  /* line 318, scss/style.scss */
+  html body #wrapper .green-border .jumbotron img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 323, scss/style.scss */
+  html body #wrapper .green-border #count-down {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    display: none;
+    color: green;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  /* line 337, scss/style.scss */
+  html body #wrapper .green-border #count-down p:first-child {
+    padding-top: 10px;
+  }
+  /* line 344, scss/style.scss */
+  html body #wrapper .choices {
+    color: white;
+    font-size: 1.1em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 25%;
+  }
+  /* line 351, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice {
+    margin-top: 8px;
+    padding-left: 2%;
+  }
+  /* line 355, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice:hover {
+    cursor: pointer;
+  }
+  /* line 358, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa {
+    padding-left: 2%;
+  }
+  /* line 361, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa-times {
+    color: red;
+  }
+  /* line 364, scss/style.scss */
+  html body #wrapper .choices .row .answer-choice .fa-check {
+    color: blue;
+  }
+}
